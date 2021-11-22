@@ -1,3 +1,4 @@
 sdkman/candidates
 .sdkman
 .sdkman/candidates
+*.bak

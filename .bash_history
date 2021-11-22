@@ -1036,3 +1036,17 @@ blah
 exec bash --login
 #1637614598
 git status
+#1637614605
+git add .
+#1637614629
+git commit -m "additional setup"
+#1637614632
+git push
+#1637614643
+exec bash -l
+#1637614655
+vi .gitignore 
+#1637614671
+diff install.sh*
+#1637614675
+rm *bak
