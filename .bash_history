@@ -906,3 +906,133 @@ git push -u origin main
 gvim ~/.bashrc
 #1637605588
 ln --help
+#1637609035
+cd windows-dotfiles/
+#1637609038
+ls -a
+#1637609090
+find .. -type l -ls
+#1637609102
+find .. -type l -ls -d
+#1637609111
+find .. -type l -ls -d -maxdepth 1
+#1637609163
+cd ../Start\ Menu/
+#1637609166
+ls -a
+#1637609168
+cd Programs/
+#1637609186
+pwd
+#1637609278
+rm WhatsApp/ -rf
+#1637609285
+rm Papercut/
+#1637609289
+rm Papercut/ -rf
+#1637609322
+rm HandBrake/ -rf
+#1637609329
+ls Google\ Photos\ Backup/
+#1637609336
+ls Google\ Photos\ Backup/ -a
+#1637609368
+ls -l NegativeScreen.lnk 
+#1637609379
+less NegativeScreen.lnk 
+#1637609405
+sdkman
+#1637609550
+cd ~/
+#1637609561
+cd windows-dotfiles/
+#1637609566
+./install.sh 
+#1637609666
+zip
+#1637609908
+choco install gow
+#1637609968
+zip
+#1637609983
+type zip
+#1637610013
+cd windows-dotfiles/
+#1637610020
+./install.sh
+#1637610171
+ls /c/Program*Files/Java/jdk*
+#1637610689
+alias |grep mvn
+#1637610709
+sdk install java 7
+#1637610714
+sdk list java
+#1637610738
+sdk install java 7.0.322-zulu 
+#1637610780
+java -version
+#1637610827
+cd /c/projects/
+#1637610832
+cd jobpost-2021/job-post/
+#1637610839
+./setup.sh 
+#1637610888
+mvn -version
+#1637610902
+sdk use env
+#1637610909
+sdk use local
+#1637610920
+sdk env 
+#1637610925
+mvn -version
+#1637610933
+mvn compile
+#1637611064
+type zip
+#1637611071
+type zip && echo its there
+#1637611076
+type zipaa && echo its there
+#1637611105
+type zipaa || echo "zip executable not found. Please install gow with 'choco install gow'"
+#1637611148
+./setup.sh 
+#1637611235
+type type
+#1637611459
+./setup.sh 
+#1637611677
+alias |grep mvn
+#1637611724
+./setup.sh 
+#1637611740
+alias |less
+#1637611748
+alias |grep mvn
+#1637611939
+mvn -version
+#1637611945
+sdk env
+#1637611952
+mvn -version
+#1637611962
+mvn compile
+#1637614092
+[[ -f ~/.m2/settings.xml ]] && echo there
+#1637614097
+[[ -z ~/.m2/settings.xml ]] && echo there
+#1637614116
+[[ test -f ~/.m2/settings.xml ]] && echo there
+#1637614125
+[[ -f ~/.m2/settings.xml ]] && echo there
+#1637614178
+[[ -f ~/.m2/settings.xml ]] || cp setupFiles/maven-settings.xml ~/.m2/settings.xml
+#1637614395
+blah
+#1637614432
+exec bash --login
+#1637614598
+git status
