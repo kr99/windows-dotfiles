@@ -1,0 +1,1 @@
+alias mvn7='JAVA_HOME='\'''\'' && mvn -B -Dhttps.protocols=TLSv1.2'
