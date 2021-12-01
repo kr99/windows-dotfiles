@@ -3,3 +3,4 @@ sdkman/candidates
 .sdkman/candidates
 *.bak
 .bash_history
+.idea
