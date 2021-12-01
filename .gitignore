@@ -2,3 +2,4 @@ sdkman/candidates
 .sdkman
 .sdkman/candidates
 *.bak
+.bash_history

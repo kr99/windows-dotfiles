@@ -128,11 +128,11 @@ set -o vi
 # allow symlinking in windows without too much issues.  Note, developer mode must be enabled in windows settings
 export MSYS=winsymlinks:nativestrict
 
-alias vim='/c/Program\ Files\ \(x86\)/Vim/vim74/vim.exe'
-alias view='/c/Program\ Files\ \(x86\)/Vim/vim74/vim.exe -R'
-alias vimdiff='/c/Program\ Files\ \(x86\)/Vim/vim74/vim.exe -d'
-alias gvim='/c/Program\ Files\ \(x86\)/Vim/vim74/gvim.exe'
-alias gvimdiff='/c/Program\ Files\ \(x86\)/Vim/vim74/gvim.exe -d'
+alias vim='/c/tools/vim/vim82/vim.exe'
+alias view='/c/tools/vim/vim82/vim.exe -R'
+alias vimdiff='/c/tools/vim/vim82/vim.exe -d'
+alias gvim='/c/tools/vim/vim82/gvim.exe'
+alias gvimdiff='/c/tools/vim/vim82/gvim.exe -d'
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"

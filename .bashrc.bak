@@ -101,9 +101,6 @@ source $OSH/oh-my-bash.sh
 # alias ohmybash="mate ~/.oh-my-bash"
 
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 echo "dynamically setting up maven aliases for each potential JAVA_HOME"
 for filename in /c/Program*Files/Java/jdk* $HOME/.sdkman/candidates/java/*; do
@@ -136,3 +133,8 @@ alias view='/c/Program\ Files\ \(x86\)/Vim/vim74/vim.exe -R'
 alias vimdiff='/c/Program\ Files\ \(x86\)/Vim/vim74/vim.exe -d'
 alias gvim='/c/Program\ Files\ \(x86\)/Vim/vim74/gvim.exe'
 alias gvimdiff='/c/Program\ Files\ \(x86\)/Vim/vim74/gvim.exe -d'
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"echo "dynamically setting up maven aliases for each potential JAVA_HOME" for filename in /c/Program*Files/Java/jdk* /c/Users/kirobins/.sdkman/candidates/java/*; do [[ =~ \* ]] && continue # ignore if it's a non-match wildcard pattern javaVersion= alias mvn="JAVA_HOME='' && mvn -B -Dhttps.protocols=TLSv1.2" done alias |grep 'mvn'
+
