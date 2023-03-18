@@ -128,11 +128,36 @@ set -o vi
 # allow symlinking in windows without too much issues.  Note, developer mode must be enabled in windows settings
 export MSYS=winsymlinks:nativestrict
 
-alias vim='/c/tools/vim/vim82/vim.exe'
-alias view='/c/tools/vim/vim82/vim.exe -R'
-alias vimdiff='/c/tools/vim/vim82/vim.exe -d'
-alias gvim='/c/tools/vim/vim82/gvim.exe'
-alias gvimdiff='/c/tools/vim/vim82/gvim.exe -d'
+
+agentenv=~/.ssh/agent.env
+
+agent_load_env () { test -f "$agentenv" && . "$agentenv" >| /dev/null ; }
+
+agent_start () {
+    (umask 077; ssh-agent >| "$agentenv")
+    . "$agentenv" >| /dev/null ; }
+
+agent_load_env
+
+# agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2=agent not running
+agent_run_state=$(ssh-add -l >| /dev/null 2>&1; echo $?)
+
+if [ ! "$SSH_AUTH_SOCK" ] || [ $agent_run_state = 2 ]; then
+    agent_start
+    ssh-add
+elif [ "$SSH_AUTH_SOCK" ] && [ $agent_run_state = 1 ]; then
+    ssh-add
+fi
+
+unset agentenv
+
+gvimLoc='/c/Windows/gvim.bat'
+alias vi="$gvimLoc"
+alias vim="$gvimLoc"
+alias view="$gvimLoc -R"
+alias vimdiff="$gvimLoc -d"
+alias gvim="$gvimLoc"
+alias gvimdiff="$gvimLoc -d"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
