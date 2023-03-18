@@ -56,8 +56,8 @@
             <Item>\Techsmith\Snagit*\Identity\</Item>
             <Item>\Techsmith\Snagit\Preferences\Output\</Item>
             <Item>\DBeaverData\*\.metadata\*\.history\*</Item>
-            <Item>\DBeaverData\workspace6\.metadata\.plugins\</Item>
-            <Item>\DBeaverData\workspace6\.metadata\task-stats\</Item>
+            <Item>\DBeaverData\*\.metadata\.plugins\</Item>
+            <Item>\DBeaverData\*\.metadata\task-stats\</Item>
             <Item>\Insomnia\GPUCache\</Item>
             <Item>\FreeFileSync\LastSyncs.log</Item>
         </Exclude>
