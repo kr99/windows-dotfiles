@@ -2,6 +2,13 @@
 
 # got some of this from stackoverflow, others.
 
+if type curl >/dev/null 2>&1
+then 
+	bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+else
+	echo "curl not installed - aborting"
+	exit 0
+fi
 
 export MSYS=winsymlinks:nativestrict
 
