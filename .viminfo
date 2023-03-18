@@ -21,13 +21,13 @@ $\r
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1679159816,,"q"
+|2,0,1679160515,,"q"
+:w
+|2,0,1679160511,,"w"
 :wq
 |2,0,1679159811,,"wq"
 :e ~/.bashrc_a
 |2,0,1679159570,,"e ~/.bashrc_a"
-:w
-|2,0,1637280828,,"w"
 :q!
 |2,0,1637179256,,"q!"
 :%s/:/\r/g
@@ -121,36 +121,52 @@ $\r
 |3,1,36,0,1,0,1679159780,"env"
 
 # File marks:
-'0  1  0  ~/.bashrc_a
-|4,48,1,0,1679159816,"~/.bashrc_a"
-'1  1  0  ~/.gitconfig
-|4,49,1,0,1679159502,"~/.gitconfig"
+'0  1  34  ~/.git/COMMIT_EDITMSG
+|4,48,1,34,1679160515,"~/.git/COMMIT_EDITMSG"
+'1  1  0  ~/.bashrc_a
+|4,49,1,0,1679159816,"~/.bashrc_a"
 '2  1  0  ~/.gitconfig
 |4,50,1,0,1679159502,"~/.gitconfig"
-'3  1  0  ~/dotfiles/.bashrc.pre-oh-my-bash
-|4,51,1,0,1637605692,"~/dotfiles/.bashrc.pre-oh-my-bash"
+'3  1  0  ~/.gitconfig
+|4,51,1,0,1679159502,"~/.gitconfig"
 '4  1  0  ~/dotfiles/.bashrc.pre-oh-my-bash
 |4,52,1,0,1637605692,"~/dotfiles/.bashrc.pre-oh-my-bash"
-'5  478  20  ~/projects-workspace/jobpost-2021/job-post/pom.xml
-|4,53,478,20,1637280837,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+'5  1  0  ~/dotfiles/.bashrc.pre-oh-my-bash
+|4,53,1,0,1637605692,"~/dotfiles/.bashrc.pre-oh-my-bash"
 '6  478  20  ~/projects-workspace/jobpost-2021/job-post/pom.xml
 |4,54,478,20,1637280837,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
-'7  486  33  ~/projects-workspace/jobpost-2021/job-post/pom.xml
-|4,55,486,33,1637280561,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+'7  478  20  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,55,478,20,1637280837,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
 '8  486  33  ~/projects-workspace/jobpost-2021/job-post/pom.xml
 |4,56,486,33,1637280561,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
-'9  5  7  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
-|4,57,5,7,1637185474,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
+'9  486  33  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,57,486,33,1637280561,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
 
 # Jumplist (newest first):
+-'  1  34  ~/.git/COMMIT_EDITMSG
+|4,39,1,34,1679160515,"~/.git/COMMIT_EDITMSG"
 -'  1  0  ~/.bashrc_a
 |4,39,1,0,1679159816,"~/.bashrc_a"
+-'  1  0  ~/.bashrc_a
+|4,39,1,0,1679159816,"~/.bashrc_a"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1679159564,"~/.bashrc"
 -'  1  0  ~/.bashrc
 |4,39,1,0,1679159564,"~/.bashrc"
 -'  1  0  ~/.gitconfig
 |4,39,1,0,1679159502,"~/.gitconfig"
 -'  1  0  ~/.gitconfig
 |4,39,1,0,1679159502,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1679159502,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1679159502,"~/.gitconfig"
+-'  1  0  ~/dotfiles/.bashrc.pre-oh-my-bash
+|4,39,1,0,1637605692,"~/dotfiles/.bashrc.pre-oh-my-bash"
+-'  1  0  ~/dotfiles/.bashrc.pre-oh-my-bash
+|4,39,1,0,1637605692,"~/dotfiles/.bashrc.pre-oh-my-bash"
+-'  1  0  ~/dotfiles/.bashrc.pre-oh-my-bash
+|4,39,1,0,1637605692,"~/dotfiles/.bashrc.pre-oh-my-bash"
 -'  1  0  ~/dotfiles/.bashrc.pre-oh-my-bash
 |4,39,1,0,1637605692,"~/dotfiles/.bashrc.pre-oh-my-bash"
 -'  1  0  ~/dotfiles/.bashrc.pre-oh-my-bash
@@ -167,6 +183,16 @@ $\r
 |4,39,478,20,1637280837,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
 -'  478  20  ~/projects-workspace/jobpost-2021/job-post/pom.xml
 |4,39,478,20,1637280837,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  478  20  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,478,20,1637280837,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  478  20  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,478,20,1637280837,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  478  20  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,478,20,1637280837,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  478  20  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,478,20,1637280837,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  478  20  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,478,20,1637280837,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
 -'  42  8  ~/projects-workspace/jobpost-2021/job-post/pom.xml
 |4,39,42,8,1637280787,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
 -'  42  8  ~/projects-workspace/jobpost-2021/job-post/pom.xml
@@ -177,6 +203,26 @@ $\r
 |4,39,42,8,1637280787,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
 -'  42  8  ~/projects-workspace/jobpost-2021/job-post/pom.xml
 |4,39,42,8,1637280787,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  42  8  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,42,8,1637280787,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  42  8  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,42,8,1637280787,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  42  8  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,42,8,1637280787,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  42  8  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,42,8,1637280787,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  42  8  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,42,8,1637280787,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  486  33  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,486,33,1637280561,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  486  33  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,486,33,1637280561,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  486  33  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,486,33,1637280561,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  486  33  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,486,33,1637280561,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  486  33  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,486,33,1637280561,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
 -'  486  33  ~/projects-workspace/jobpost-2021/job-post/pom.xml
 |4,39,486,33,1637280561,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
 -'  486  33  ~/projects-workspace/jobpost-2021/job-post/pom.xml
@@ -205,6 +251,58 @@ $\r
 |4,39,1,0,1637280553,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
 -'  1  0  ~/projects-workspace/jobpost-2021/job-post/pom.xml
 |4,39,1,0,1637280553,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  1  0  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,1,0,1637280553,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  1  0  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,1,0,1637280553,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  1  0  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,1,0,1637280553,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  1  0  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,1,0,1637280553,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  1  0  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,1,0,1637280553,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  1  0  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,1,0,1637280553,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  1  0  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,1,0,1637280553,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  1  0  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,1,0,1637280553,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  1  0  ~/projects-workspace/jobpost-2021/job-post/pom.xml
+|4,39,1,0,1637280553,"~/projects-workspace/jobpost-2021/job-post/pom.xml"
+-'  5  7  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
+|4,39,5,7,1637185474,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
+-'  5  7  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
+|4,39,5,7,1637185474,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
+-'  5  7  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
+|4,39,5,7,1637185474,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
+-'  5  7  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
+|4,39,5,7,1637185474,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
+-'  5  7  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
+|4,39,5,7,1637185474,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
+-'  5  7  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
+|4,39,5,7,1637185474,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
+-'  5  7  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
+|4,39,5,7,1637185474,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
+-'  5  7  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
+|4,39,5,7,1637185474,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
+-'  5  7  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
+|4,39,5,7,1637185474,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
+-'  5  7  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
+|4,39,5,7,1637185474,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
+-'  5  7  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
+|4,39,5,7,1637185474,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
+-'  5  7  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
+|4,39,5,7,1637185474,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
+-'  5  7  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
+|4,39,5,7,1637185474,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
+-'  5  7  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
+|4,39,5,7,1637185474,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
+-'  5  7  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
+|4,39,5,7,1637185474,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
+-'  5  7  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
+|4,39,5,7,1637185474,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
+-'  5  7  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
+|4,39,5,7,1637185474,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
 -'  5  7  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
 |4,39,5,7,1637185474,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
 -'  5  7  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
@@ -245,110 +343,18 @@ $\r
 |4,39,4,10,1637185460,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
 -'  4  10  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
 |4,39,4,10,1637185460,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
--'  4  10  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
-|4,39,4,10,1637185460,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
--'  4  10  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
-|4,39,4,10,1637185460,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
--'  4  10  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
-|4,39,4,10,1637185460,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
--'  4  10  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
-|4,39,4,10,1637185460,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
--'  4  10  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
-|4,39,4,10,1637185460,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
--'  4  10  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
-|4,39,4,10,1637185460,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
--'  4  10  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
-|4,39,4,10,1637185460,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
--'  4  10  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
-|4,39,4,10,1637185460,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
--'  4  10  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
-|4,39,4,10,1637185460,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
--'  4  10  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
-|4,39,4,10,1637185460,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
--'  4  10  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
-|4,39,4,10,1637185460,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
--'  4  10  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
-|4,39,4,10,1637185460,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
--'  4  10  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
-|4,39,4,10,1637185460,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
--'  4  10  ~/projects-workspace/jobpost-2021/job-post/.sdkmanrc
-|4,39,4,10,1637185460,"~/projects-workspace/jobpost-2021/job-post/.sdkmanrc"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  63  0  /tmp/path
-|4,39,63,0,1637179256,"/tmp/path"
--'  27  51  /tmp/path
-|4,39,27,51,1637179091,"/tmp/path"
--'  27  51  /tmp/path
-|4,39,27,51,1637179091,"/tmp/path"
 
 # Buffer list:
-%~/.bashrc	152	13
-%~/.bashrc_a	1	0
+%~/.git/COMMIT_EDITMSG	1	34
 
 # History of marks within files (newest to oldest):
+
+> ~/.git/COMMIT_EDITMSG
+	*	1679160511	0
+	"	1	34
+	^	1	35
+	.	1	34
+	+	1	34
 
 > ~/.bashrc_a
 	*	1679159811	0

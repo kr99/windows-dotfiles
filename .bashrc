@@ -158,6 +158,8 @@ alias view="$gvimLoc -R"
 alias vimdiff="$gvimLoc -d"
 alias gvim="$gvimLoc"
 alias gvimdiff="$gvimLoc -d"
+export EDITOR="$gvimLoc"
+set -o vi
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
