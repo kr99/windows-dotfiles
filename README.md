@@ -10,3 +10,11 @@ git init
 git remote add origin $REPO
 git switch --no-overwrite-ignore main # may indicate conflicts; resolve these, then retry.
 ```
+
+Now, only files you target will be added/updated.
+
+To add modified files:
+```
+git add -u
+```
+To add a file, you will be prompted to use -F to force add an ignored file.
