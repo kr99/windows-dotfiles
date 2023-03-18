@@ -1,3 +1,5 @@
+set background=dark
+colorscheme industry
 runtime macros/matchit.vim
 set textwidth=0 wrapmargin=0 showmode
 set backspace=start,indent
