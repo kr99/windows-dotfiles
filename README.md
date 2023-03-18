@@ -4,10 +4,17 @@ See this article: [Store dotfiles directly in home dir and git repo](https://dev
 
 How to do the initial checkout:
 ```
+export REPO=git@github.com:kr99/windows-dotfiles.git
+
 git init
 git remote add origin $REPO
-
-# Execute/uncomment one of the following 2 lines unless a .gitignore with '/**' already exists in the repo
-# git config --local status.showUntrackedFiles no
-echo '/**' >> .git/info/exclude
+git switch --no-overwrite-ignore main # may indicate conflicts; resolve these, then retry.
 ```
+
+Now, only files you target will be added/updated.
+
+To add modified files:
+```
+git add -u
+```
+To add a file, you will be prompted to use -F to force add an ignored file.
