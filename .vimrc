@@ -1,9 +1,6 @@
 runtime macros/matchit.vim
-
 set textwidth=0 wrapmargin=0 showmode
 set backspace=start,indent
-
-set guifont=Lucida_Sans_Typewriter:h12:cANSI:qDRAFT
 
 let mapleader = " "
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
@@ -48,11 +45,6 @@ set backspace+=indent,eol,start
 filetype indent plugin on
 "syntax highlighting:
 syntax on
-
-"settings for the HTML.vim plugin by Chris Robinson
-let g:html_tag_case = 'lower'
-let g:html_authorname  = 'Kimball Robinson'
-let g:html_authoremail = 'zwokkqxpozgc+zlivzugzyrznvy (AT) gmail <DOT> com'
 
 "toggle hlsearch on/off with F7
 :noremap <F7> :set hlsearch!<cr>
