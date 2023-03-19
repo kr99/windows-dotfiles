@@ -12,10 +12,14 @@ choco install --yes git gow curl ssh
 How to do the initial checkout:
 ```
 export REPO=git@github.com:kr99/windows-dotfiles.git
+export BRANCH=main
 
 git init
+git config --local status.showUntrackedFiles no
 git remote add origin $REPO
-git switch --no-overwrite-ignore main # may indicate conflicts; resolve these, then retry.
+git fetch --set-upstream origin $BRANCH
+git switch --no-overwrite-ignore $BRANCH # Complains if files of same name already exist
+#git switch -f $BRANCH # Only do this if you are comfortable overwriting existing files
 ```
 
 Now, only files you target will be added/updated.
