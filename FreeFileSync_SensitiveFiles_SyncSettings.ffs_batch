@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FreeFileSync XmlType="BATCH" XmlFormat="12">
+    <Compare>
+        <Variant>TimeAndSize</Variant>
+        <Symlinks>Exclude</Symlinks>
+        <IgnoreTimeShift/>
+    </Compare>
+    <Synchronize>
+        <Variant>Update</Variant>
+        <DetectMovedFiles>false</DetectMovedFiles>
+        <DeletionPolicy>RecycleBin</DeletionPolicy>
+        <VersioningFolder Style="Replace"/>
+    </Synchronize>
+    <Filter>
+        <Include>
+            <Item>.ssh</Item>
+            <Item>.npmrc</Item>
+        </Include>
+        <Exclude>
+            <Item>\System Volume Information\</Item>
+            <Item>\$Recycle.Bin\</Item>
+            <Item>\RECYCLER\</Item>
+            <Item>\RECYCLED\</Item>
+            <Item>*\desktop.ini</Item>
+            <Item>*\thumbs.db</Item>
+            <Item>*\data\</Item>
+            <Item>\RingCentral\</Item>
+            <Item>\nvm\</Item>
+            <Item>\Postman\Partitions\</Item>
+            <Item>*\jdbc-drivers\</Item>
+            <Item>*\extLibs\</Item>
+            <Item>*\nodejs\</Item>
+            <Item/>
+            <Item>\JetBrains\IntelliJIdea*\options\dataSources\*\storage_*\</Item>
+            <Item>\JetBrains\IntelliJIdea*\plugins\</Item>
+            <Item>\JabraSDK\</Item>
+            <Item>\RCV\</Item>
+            <Item>\Postman\logs\</Item>
+            <Item>\Postman\Crashpad\</Item>
+            <Item>*\Cache\</Item>
+            <Item>*\logs\</Item>
+            <Item>\Mozilla\</Item>
+            <Item>\GitHub Desktop\</Item>
+            <Item>\Join Desktop\</Item>
+            <Item>\Docker Desktop\</Item>
+            <Item>\Adobe\</Item>
+            <Item>*\Code Cache\</Item>
+            <Item>\PostmanAgent\</Item>
+            <Item>\Meetings\</Item>
+            <Item>\ZoomSDK\</Item>
+            <Item>*\Ditto.db</Item>
+            <Item>\Slack\</Item>
+            <Item>\Microsoft\</Item>
+            <Item>\npm-cache\</Item>
+            <Item>*\drivers\</Item>
+            <Item>\Docker\</Item>
+            <Item>\Techsmith\Snagit*\Identity\</Item>
+            <Item>\Techsmith\Snagit\Preferences\Output\</Item>
+            <Item>\DBeaverData\*\.metadata\*\.history\*</Item>
+            <Item>\DBeaverData\workspace6\.metadata\.plugins\</Item>
+            <Item>\DBeaverData\workspace6\.metadata\task-stats\</Item>
+            <Item>\Insomnia\GPUCache\</Item>
+            <Item>\FreeFileSync\LastSyncs.log</Item>
+        </Exclude>
+        <TimeSpan Type="None">0</TimeSpan>
+        <SizeMin Unit="None">0</SizeMin>
+        <SizeMax Unit="None">0</SizeMax>
+    </Filter>
+    <FolderPairs>
+        <Pair>
+            <Left>C:\Users\kirobins\</Left>
+            <Right>C:\Users\kirobins\OneDrive - CHG Healthcare\Sensitive-creds.sync</Right>
+        </Pair>
+    </FolderPairs>
+    <Errors Ignore="false" Retry="0" Delay="5"/>
+    <PostSyncCommand Condition="Completion"/>
+    <Batch>
+        <ProgressDialog Minimized="false" AutoClose="false"/>
+        <ErrorDialog>Show</ErrorDialog>
+        <PostSyncAction>None</PostSyncAction>
+        <LogfileFolder Limit="10"/>
+    </Batch>
+</FreeFileSync>
