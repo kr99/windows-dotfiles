@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+# It is assumed that git bash and chocolatey were installed prior to this script.  This script helps to set up a WINDOWS environment.
 
 net session > /dev/null 2>&1
 if [[ $? -eq 0 ]]; then
@@ -9,7 +9,7 @@ else
 	exit
 fi
 
-if type choco
+if type choco # chocolatey is installed yet?
 then
 	choco install --yes wget curl ditto freefilesync notepadplusplus
 	choco install --yes git gow nvm vim
@@ -31,6 +31,9 @@ sdk install maven   #install latest as default
 
 sdk env install #install java version specified in .sdkmanrc in this project
 sdk env #switch to the java version noted in .sdkmanrc
+
+nvm install lts
+nvm use lts
 
 # got some of this from stackoverflow, others.
 shopt -s nocasematch
@@ -59,11 +62,13 @@ echo "Running zscaler setup script" # must come after sdkman
 bash setup-scripts/setup-zscaler.bash
 
 choco install --yes powertoys
-choco install --yes autohotkey 
-choco install --yes wincompose
+choco install --yes greenshot # screen capture tool, better than the windows default.
+choco install --yes autohotkey # custom hotkeys, keyboard templates, etc
+choco install --yes wincompose # a way to compose special characters like the degree symbol, fractions, copyright, and any accented character...
 choco install --yes postman powertoys slack 
 choco install --yes dbeaver jbs conemu 
 #choco install --yes intellijidea-ultimate # perhaps download it manually
 #choco install --yes Firefox #probably already installed by now, manually.
 # getting to fun/extras...
 choco install --yes vlc gimp
+#choco install --yes spotify
