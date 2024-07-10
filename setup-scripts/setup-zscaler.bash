@@ -7,15 +7,85 @@ else
 	exit
 fi
 
-# check for GOW setup and commands
-keytool > /dev/null 2>&1
-if [[ $? -eq 0 ]]; then
-	echo "OK: keytool found"
-else 
-	echo "keytool is not found.  This is a gnu util you can get by installing Git On Windows (GOW)"
-	echo "exiting"
-	exit
+check_keytool() {
+    if command -v keytool >/dev/null 2>&1; then
+        echo "OK: keytool found"
+        return 0
+    else
+        return 1
+    fi
+}
+show_error() {
+    echo -e "\e[31mERROR: $1\e[0m"
+}
+
+# Function to set up SDKMAN and Java
+setup_sdkman_and_java() {
+    # Check if SDKMAN is installed
+    if [[ ! -d "$HOME/.sdkman" ]]; then
+        echo "SDKMAN not found. Please install SDKMAN first."
+        echo "Visit https://sdkman.io/install for installation instructions."
+        return 1
+    fi
+
+    # Load SDKMAN
+    source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+    # Check for installed Java versions
+    local installed_java=$(sdk list java | grep installed | awk '{print $NF}' | sort -V | tail -n1)
+
+    if [[ -z "$installed_java" ]]; then
+        echo "No Java version found. Installing latest LTS version..."
+        sdk install java
+    else
+        echo "Using latest installed Java version: $installed_java"
+        sdk use java $installed_java
+    fi
+
+    # Update JAVA_HOME
+    export JAVA_HOME=$(sdk home java current)
+    export PATH=$JAVA_HOME/bin:$PATH
+}
+
+
+# Function to ensure keytool is available
+ensure_keytool() {
+    if ! check_keytool; then
+        show_error "keytool not found. Attempting to set up Java using SDKMAN..."
+        if setup_sdkman_and_java; then
+            if check_keytool; then
+                echo "keytool is now available."
+            else
+                show_error "Failed to find keytool even after setting up Java. Please check your Java installation."
+                return 1
+            fi
+        else
+            show_error "Failed to set up Java. Please install Java manually and ensure JAVA_HOME is set."
+            return 1
+        fi
+    fi
+    return 0
+}
+
+if ! ensure_keytool; then
+    exit 1
 fi
+
+## check for keytool
+#if ! check_keytool; then
+#    echo "keytool not found. Attempting to set up Java using SDKMAN..."
+#    if setup_sdkman_and_java; then
+#        if check_keytool; then
+#            echo "keytool is now available."
+#        else
+#            echo "Failed to find keytool even after setting up Java. Please check your Java installation."
+#            exit 1
+#        fi
+#    else
+#        echo "Failed to set up Java. Please install Java manually and ensure JAVA_HOME is set."
+#        exit 1
+#    fi
+#fi
 
 
 # Check for certs file and set up variables

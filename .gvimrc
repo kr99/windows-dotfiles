@@ -70,7 +70,7 @@ noremap <C-j><C-j><C-j> ^f(B"zyt(?^class<C-m>w"xye/<C-r>x.*::[^(]*<C-r>z\><C-m>z
 noremap <C-j><C-j><C-d> ^"yyt;?^class<C-m>wve"xyG?^\(\<\w.*\s*.\)\{0,1\}<C-r>x::<C-m>/^}<C-m>o<c-m><c-r>y<esc>\|f(Bi<c-r>x::<esc>$o{<c-m>}<esc>O//code goes here...<esc>
 "case statements automatically include a break statement:
 "iab case case 2:
-break;k$hh2s
+" break;k$hh2s
 
 
 "tabs = 3 or 4 spaces.

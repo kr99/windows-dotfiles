@@ -97,7 +97,7 @@ plugins=(
 
 # Which plugins would you like to conditionally load? (plugins can be found in ~/.oh-my-bash/plugins/*)
 # Custom plugins may be added to ~/.oh-my-bash/custom/plugins/
-# Example format: 
+# Example format:
 #  if [ "$DISPLAY" ] || [ "$SSH" ]; then
 #      plugins+=(tmux-autoattach)
 #  fi
@@ -243,9 +243,17 @@ source ~/.bashrc-ssh-agent
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 
 
+
+
 source ~/.bashrc-npm-completion
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+npm() {
+    if [ -z "$NPM_TOKEN" ]; then
+        export NPM_TOKEN=$(grep '_authToken' ~/.npmrc | head -n 1 | cut -d '=' -f2)
+    fi
+    command npm "$@"
+}
