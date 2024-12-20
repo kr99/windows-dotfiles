@@ -6,7 +6,7 @@ First, you need chocolatey, git, git bash, and gow.  In powershell, as an admin:
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
-choco install --yes git gow curl ssh
+choco install --yes git gow curl openssh
 ```
 
 How to do the initial checkout:
