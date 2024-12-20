@@ -9,6 +9,12 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 choco install --yes git gow curl openssh
 ```
 
+You will need to generate a new ssh key from github.  It's a pain.
+* git bash: `ssh-keygen -t rsa -b 4096 -C "kimball.robinson@chghealthcare.com"`
+* git bash: `clip < ~/.ssh/id_rsa.pub`
+* https://github.com/settings/keys
+* 
+
 How to do the initial checkout:
 ```
 export REPO=git@github.com:kr99/windows-dotfiles.git
@@ -29,3 +35,9 @@ To add modified files:
 git add -u
 ```
 To add a file, you will be prompted to use -F to force add an ignored file.
+
+Now, start git-bash **as admin**
+```
+cd setup-scripts
+bash ./install.sh
+```
