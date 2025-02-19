@@ -3,8 +3,7 @@ These are my dotfiles for Windows and git-bash under Windows.
 See this article: [Store dotfiles directly in home dir and git repo](https://dev.to/bowmanjd/store-home-directory-config-files-dotfiles-in-git-using-bash-zsh-or-powershell-a-simple-approach-without-a-bare-repo-2if7)
 
 GPT claude sonnet generated this one-go script.  Let's try it next time, shall we?
-```
-# bootstrap.ps1
+```# bootstrap.ps1
 Set-ExecutionPolicy Bypass -Scope Process -Force
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
 
@@ -27,13 +26,17 @@ if (!(Get-Command choco -ErrorAction SilentlyContinue)) {
 Write-Host "`nInstalling required tools..."
 choco install --yes git gow curl openssh
 
+# Always show backup instructions first
+Write-Host "`nTo backup SSH keys to OneDrive, run these commands on your source machine:"
+Write-Host "mkdir -p `"$env:OneDrive/SSH-Backup`""
+Write-Host "cp ~/.ssh/id_rsa* `"$env:OneDrive/SSH-Backup/`""
+
 # SSH Key handling
-Write-Host "`nSSH Key Options:"
+Write-Host "`nSSH Key Options for this machine:"
 Write-Host "1. Generate new SSH key and open GitHub"
 Write-Host "2. Copy existing SSH key from OneDrive"
-Write-Host "3. Print commands to backup current SSH key to OneDrive"
 
-$keyChoice = Read-Host "`nSelect option (1-3)"
+$keyChoice = Read-Host "`nSelect option (1-2)"
 
 switch ($keyChoice) {
     "1" {
@@ -58,12 +61,6 @@ switch ($keyChoice) {
             exit 1
         }
     }
-    "3" {
-        Write-Host "`nTo backup current SSH key to OneDrive, run:"
-        Write-Host "mkdir -p `"$env:OneDrive/SSH-Backup`""
-        Write-Host "cp ~/.ssh/id_rsa* `"$env:OneDrive/SSH-Backup/`""
-        exit 0
-    }
     default {
         Write-Host "Invalid option. Script will exit."
         exit 1
@@ -84,7 +81,8 @@ git switch --no-overwrite-ignore $env:BRANCH
 Write-Host "`nSetup complete!"
 ```
 
-
+<details>
+    <summary>Manually - what we might need to do instead.  Old version</summary>
 First, you need chocolatey, git, git bash, and gow.  In powershell, as an admin:
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
@@ -124,3 +122,4 @@ Now, start git-bash **as admin**
 cd setup-scripts
 bash ./install.sh
 ```
+</details>
