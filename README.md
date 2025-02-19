@@ -2,6 +2,89 @@ These are my dotfiles for Windows and git-bash under Windows.
 
 See this article: [Store dotfiles directly in home dir and git repo](https://dev.to/bowmanjd/store-home-directory-config-files-dotfiles-in-git-using-bash-zsh-or-powershell-a-simple-approach-without-a-bare-repo-2if7)
 
+GPT claude sonnet generated this one-go script.  Let's try it next time, shall we?
+```
+# bootstrap.ps1
+Set-ExecutionPolicy Bypass -Scope Process -Force
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
+
+# Check Windows Updates first
+Write-Host "`nIMPORTANT: Windows Updates should be run first." -ForegroundColor Yellow
+start ms-settings:windowsupdate
+$response = Read-Host "Have you started Windows Updates? (y/n)"
+if ($response -ne 'y') {
+    Write-Host "Please run Windows Updates first. Script will exit."
+    exit 1
+}
+
+# Install chocolatey if not present
+if (!(Get-Command choco -ErrorAction SilentlyContinue)) {
+    Write-Host "`nInstalling Chocolatey..."
+    iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+}
+
+# Install required tools
+Write-Host "`nInstalling required tools..."
+choco install --yes git gow curl openssh
+
+# SSH Key handling
+Write-Host "`nSSH Key Options:"
+Write-Host "1. Generate new SSH key and open GitHub"
+Write-Host "2. Copy existing SSH key from OneDrive"
+Write-Host "3. Print commands to backup current SSH key to OneDrive"
+
+$keyChoice = Read-Host "`nSelect option (1-3)"
+
+switch ($keyChoice) {
+    "1" {
+        if (!(Test-Path "~/.ssh/id_rsa")) {
+            ssh-keygen -t rsa -b 4096 -C "kimball.robinson@chghealthcare.com" -f "$HOME/.ssh/id_rsa" -N '""'
+            Get-Content "$HOME/.ssh/id_rsa.pub" | clip
+            Write-Host "`nPublic SSH key copied to clipboard."
+            Start-Process "https://github.com/settings/keys"
+            Write-Host "Press Enter after adding the key to GitHub..."
+            Read-Host
+        }
+    }
+    "2" {
+        Write-Host "`nTo copy from OneDrive, run these commands:"
+        Write-Host "mkdir -p ~/.ssh"
+        Write-Host "cp `"$env:OneDrive/SSH-Backup/id_rsa`" ~/.ssh/"
+        Write-Host "cp `"$env:OneDrive/SSH-Backup/id_rsa.pub`" ~/.ssh/"
+        Write-Host "chmod 600 ~/.ssh/id_rsa"
+        $proceed = Read-Host "`nHave you copied the SSH keys? (y/n)"
+        if ($proceed -ne 'y') {
+            Write-Host "Please copy SSH keys before continuing. Script will exit."
+            exit 1
+        }
+    }
+    "3" {
+        Write-Host "`nTo backup current SSH key to OneDrive, run:"
+        Write-Host "mkdir -p `"$env:OneDrive/SSH-Backup`""
+        Write-Host "cp ~/.ssh/id_rsa* `"$env:OneDrive/SSH-Backup/`""
+        exit 0
+    }
+    default {
+        Write-Host "Invalid option. Script will exit."
+        exit 1
+    }
+}
+
+# Clone dotfiles
+Write-Host "`nCloning dotfiles..."
+$env:REPO="git@github.com:kr99/windows-dotfiles.git"
+$env:BRANCH="main"
+
+git init
+git config --local status.showUntrackedFiles no
+git remote add origin $env:REPO
+git fetch --set-upstream origin $env:BRANCH
+git switch --no-overwrite-ignore $env:BRANCH
+
+Write-Host "`nSetup complete!"
+```
+
+
 First, you need chocolatey, git, git bash, and gow.  In powershell, as an admin:
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
