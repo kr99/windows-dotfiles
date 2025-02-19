@@ -24,7 +24,7 @@ if (!(Get-Command choco -ErrorAction SilentlyContinue)) {
 
 # Install required tools
 Write-Host "`nInstalling required tools..."
-choco install --yes git gow curl openssh
+choco install --yes git gow curl openssh rsync
 
 # Always show backup instructions first
 Write-Host "`nTo backup SSH keys to OneDrive, run these commands on your source machine:"
