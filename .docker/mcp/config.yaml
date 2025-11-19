@@ -1,0 +1,13 @@
+git:
+  paths:
+    - C:\projects\chg-fox-monolith2
+    - C:\projects\sts
+filesystem:
+  paths:
+    - c:\projects\sts
+    - C:\Users\kirobins\OneDrive - CHG Healthcare\Documents\obsidian-todo
+    - c:\projects\chg-ldm-doc
+    - C:\projects\claude-sandbox-mcps-etc
+desktop-commander:
+  paths:
+    - C:/projects/sts
