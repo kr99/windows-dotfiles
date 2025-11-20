@@ -28,8 +28,9 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias killport='f(){ npx kill-port ${1:-3000}; }; f'
 
-alias prune='git branch --merged main | grep -v '^[ *]*main$' | xargs git branch -d' # removes branches that don't exist on remote.
+alias prune='git branch --merged main | grep -v "^[ *]*main$" | xargs git branch -d'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

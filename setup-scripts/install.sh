@@ -11,7 +11,7 @@ fi
 
 if type choco # chocolatey is installed yet?
 then
-	choco install --yes wget curl ditto freefilesync notepadplusplus
+	choco install --yes wget curl ditto notepadplusplus
 	choco install --yes git gow nvm vim
 	choco install --yes openssh
 	echo "Now, use freefilesync to pull AppData and other config files out of OneDrive/(employer)"
@@ -46,15 +46,6 @@ else
 	echo "username not found"
 fi
 
-if type curl >/dev/null 2>&1
-then 
-	echo "Installing oh-my-bash last, since it tends to replace the bashrc"
-	echo "installing oh-my-bash"
-	bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
-else
-	echo "curl not installed - aborting"
-	exit 0
-fi
 
 export MSYS=winsymlinks:nativestrict
 
@@ -62,13 +53,27 @@ echo "Running zscaler setup script" # must come after sdkman
 bash setup-scripts/setup-zscaler.bash
 
 choco install --yes powertoys
-choco install --yes greenshot # screen capture tool, better than the windows default.
-choco install --yes autohotkey # custom hotkeys, keyboard templates, etc
-choco install --yes wincompose # a way to compose special characters like the degree symbol, fractions, copyright, and any accented character...
-choco install --yes postman powertoys slack 
+#choco install --yes greenshot # screen capture tool, better than the windows default.
+#choco install --yes autohotkey # custom hotkeys, keyboard templates, etc
+#choco install --yes wincompose # a way to compose special characters like the degree symbol, fractions, copyright, and any accented character...
+choco install --yes postman 
+choco install --yes dbeaver 
+choco install --yes jbs 
 choco install --yes dbeaver jbs conemu 
+#choco install --yes docker-for-windows 
+#choco install --yes sourcetree 
 #choco install --yes intellijidea-ultimate # perhaps download it manually
 #choco install --yes Firefox #probably already installed by now, manually.
 # getting to fun/extras...
-choco install --yes vlc gimp
+#choco install --yes vlc gimp
 #choco install --yes spotify
+
+if type curl >/dev/null 2>&1
+then 
+	echo "Installing oh-my-bash LAST, since it tends to replace the bashrc & shell"
+	echo "installing oh-my-bash"
+	bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+else
+	echo "curl not installed - aborting"
+	exit 0
+fi  

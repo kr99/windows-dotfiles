@@ -19,8 +19,8 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 42557
-      githubStars: 7407
+      pulls: 42789
+      githubStars: 7421
       category: devops
       tags:
         - aws-core-mcp-server
@@ -57,9 +57,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 65005
+      pulls: 65609
       stars: 20
-      githubStars: 346
+      githubStars: 348
       category: search
       tags:
         - brave
@@ -87,9 +87,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 159103
+      pulls: 160139
       stars: 15
-      githubStars: 37385
+      githubStars: 37509
       category: devops
       tags:
         - context7
@@ -157,9 +157,9 @@ registry:
             type: string
             description: Setting to "true" (default) enables read-only query mode while running SQL++ queries.
     metadata:
-      pulls: 2555
+      pulls: 2574
       stars: 3
-      githubStars: 24
+      githubStars: 25
       category: database
       tags:
         - couchbase
@@ -226,9 +226,9 @@ registry:
         required:
           - paths
     metadata:
-      pulls: 97748
+      pulls: 98070
       stars: 21
-      githubStars: 4923
+      githubStars: 4928
       category: devops
       tags:
         - desktop-commander
@@ -287,7 +287,7 @@ registry:
           username:
             type: string
     metadata:
-      pulls: 36512
+      pulls: 36818
       stars: 6
       githubStars: 84
       category: devops
@@ -335,7 +335,7 @@ registry:
         required:
           - url
     metadata:
-      pulls: 9896
+      pulls: 9971
       stars: 12
       githubStars: 551
       category: search
@@ -409,7 +409,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      githubStars: 24568
+      githubStars: 24594
       category: devops
       tags:
         - github
@@ -509,9 +509,9 @@ registry:
           url:
             type: string
     metadata:
-      pulls: 150811
+      pulls: 153446
       stars: 18
-      githubStars: 1871
+      githubStars: 1876
       category: monitoring
       tags:
         - grafana
@@ -572,7 +572,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 3524
+      pulls: 3545
       stars: 2
       githubStars: 72
       category: devops
@@ -623,7 +623,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 83013
+      pulls: 83188
       stars: 7
       githubStars: 824
       category: database
@@ -671,7 +671,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 5063
+      pulls: 5081
       stars: 4
       githubStars: 520
       category: database
@@ -722,9 +722,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 60827
+      pulls: 61456
       stars: 31
-      githubStars: 3489
+      githubStars: 3494
       category: productivity
       tags:
         - notion
@@ -755,9 +755,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 30705
+      pulls: 30849
       stars: 14
-      githubStars: 1776
+      githubStars: 1779
       category: devops
       tags:
         - perplexity-ask
@@ -802,9 +802,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 246392
+      pulls: 251176
       stars: 23
-      githubStars: 23383
+      githubStars: 23428
       category: devops
       tags:
         - playwright
@@ -855,9 +855,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 10606
+      pulls: 10706
       stars: 9
-      githubStars: 1113
+      githubStars: 1117
       category: finance
       tags:
         - stripe
@@ -909,9 +909,9 @@ registry:
           nodeenv:
             type: string
     metadata:
-      pulls: 2183
+      pulls: 2221
       stars: 1
-      githubStars: 347
+      githubStars: 348
       category: productivity
       tags:
         - productivity
@@ -984,7 +984,7 @@ registry:
           - kubeconfig
           - access_level
     metadata:
-      pulls: 2939
+      pulls: 2979
       stars: 1
       githubStars: 100
       category: devops
@@ -1013,8 +1013,8 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 209
-      githubStars: 7407
+      pulls: 231
+      githubStars: 7421
       category: ai-ml
       tags:
         - aws
@@ -1058,8 +1058,8 @@ registry:
         required:
           - kendra_index_id
     metadata:
-      pulls: 182
-      githubStars: 7407
+      pulls: 199
+      githubStars: 7421
       category: ai-ml
       tags:
         - aws
@@ -1105,8 +1105,8 @@ registry:
         required:
           - neptune_endpoint
     metadata:
-      pulls: 177
-      githubStars: 7407
+      pulls: 194
+      githubStars: 7421
       category: database
       tags:
         - aws
@@ -1160,8 +1160,8 @@ registry:
         required:
           - qbusiness_application_id
     metadata:
-      pulls: 203
-      githubStars: 7407
+      pulls: 222
+      githubStars: 7421
       category: ai-ml
       tags:
         - aws
@@ -1237,8 +1237,8 @@ registry:
             type: string
             description: 'Comma-separated list of tools to enable. Can be either a tool category, a specific tool, or an Apify Actor. For example: "actors,docs,apify/rag-web-browser". For more details visit https://mcp.apify.com.'
     metadata:
-      pulls: 4220
-      githubStars: 569
+      pulls: 4279
+      githubStars: 575
       category: productivity
       tags:
         - productivity
@@ -1285,7 +1285,7 @@ registry:
         required:
           - storage_path
     metadata:
-      pulls: 11848
+      pulls: 12049
       stars: 2
       githubStars: 23
       category: search
@@ -1330,7 +1330,7 @@ registry:
         required:
           - path
     metadata:
-      pulls: 7965
+      pulls: 8156
       stars: 2
       category: code
       tags:
@@ -1385,7 +1385,7 @@ registry:
           endpoint:
             type: string
     metadata:
-      pulls: 2771
+      pulls: 2792
       githubStars: 37
       category: database
       tags:
@@ -1450,7 +1450,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 1484
+      pulls: 1503
       githubStars: 22
       category: database
       tags:
@@ -1489,7 +1489,7 @@ registry:
           api_url:
             type: string
     metadata:
-      pulls: 4532
+      pulls: 4568
       stars: 2
       githubStars: 32
       category: devops
@@ -1606,9 +1606,9 @@ registry:
           - required:
               - jira
     metadata:
-      pulls: 39167
+      pulls: 39648
       stars: 22
-      githubStars: 3618
+      githubStars: 3623
       category: productivity
       tags:
         - atlassian
@@ -1659,7 +1659,7 @@ registry:
         required:
           - client_id
     metadata:
-      pulls: 2710
+      pulls: 2726
       githubStars: 17
       category: devops
       tags:
@@ -1710,8 +1710,8 @@ registry:
           aws_access_key_id:
             type: string
     metadata:
-      pulls: 332
-      githubStars: 7407
+      pulls: 358
+      githubStars: 7421
       category: devops
       tags:
         - aws
@@ -1768,8 +1768,8 @@ registry:
           aws_access_key_id:
             type: string
     metadata:
-      pulls: 176
-      githubStars: 7407
+      pulls: 192
+      githubStars: 7421
       category: devops
       tags:
         - aws
@@ -1826,8 +1826,8 @@ registry:
           bedrock_model_import_s3_bucket:
             type: string
     metadata:
-      pulls: 164
-      githubStars: 7407
+      pulls: 181
+      githubStars: 7421
       category: ai-ml
       tags:
         - aws
@@ -1872,8 +1872,8 @@ registry:
         required:
           - aws_bucket_name
     metadata:
-      pulls: 186
-      githubStars: 7407
+      pulls: 204
+      githubStars: 7421
       category: ai-ml
       tags:
         - aws
@@ -1902,8 +1902,8 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 12763
-      githubStars: 7407
+      pulls: 12856
+      githubStars: 7421
       category: devops
       tags:
         - aws-cdk-mcp-server
@@ -1972,8 +1972,8 @@ registry:
           aws_profile:
             type: string
     metadata:
-      pulls: 180
-      githubStars: 7407
+      pulls: 208
+      githubStars: 7421
       category: data-analytics
       tags:
         - aws
@@ -2009,9 +2009,9 @@ registry:
         required:
           - output_dir
     metadata:
-      pulls: 17498
+      pulls: 17639
       stars: 1
-      githubStars: 7407
+      githubStars: 7421
       category: devops
       tags:
         - aws-diagram
@@ -2037,9 +2037,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 35850
+      pulls: 36135
       stars: 1
-      githubStars: 7407
+      githubStars: 7421
       category: devops
       tags:
         - aws-documentation
@@ -2096,8 +2096,8 @@ registry:
           aws_profile:
             type: string
     metadata:
-      pulls: 174
-      githubStars: 7407
+      pulls: 190
+      githubStars: 7421
       category: healthcare
       tags:
         - aws
@@ -2161,8 +2161,8 @@ registry:
           aws_profile:
             type: string
     metadata:
-      pulls: 159
-      githubStars: 7407
+      pulls: 174
+      githubStars: 7421
       category: iot
       tags:
         - aws
@@ -2201,9 +2201,9 @@ registry:
         required:
           - access_key_id
     metadata:
-      pulls: 4083
+      pulls: 4114
       stars: 6
-      githubStars: 72864
+      githubStars: 72952
       category: devops
       tags:
         - aws
@@ -2258,8 +2258,8 @@ registry:
           aws_access_key_id:
             type: string
     metadata:
-      pulls: 156
-      githubStars: 7407
+      pulls: 171
+      githubStars: 7421
       category: geospatial
       tags:
         - aws
@@ -2315,8 +2315,8 @@ registry:
           aws_access_key_id:
             type: string
     metadata:
-      pulls: 171
-      githubStars: 7407
+      pulls: 186
+      githubStars: 7421
       category: messaging
       tags:
         - aws
@@ -2372,8 +2372,8 @@ registry:
           aws_access_key_id:
             type: string
     metadata:
-      pulls: 281
-      githubStars: 7407
+      pulls: 301
+      githubStars: 7421
       category: cost-management
       tags:
         - aws
@@ -2402,8 +2402,8 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 15896
-      githubStars: 7407
+      pulls: 16003
+      githubStars: 7421
       category: devops
       tags:
         - aws
@@ -2458,8 +2458,8 @@ registry:
           storage_lens_manifest_location:
             type: string
     metadata:
-      pulls: 214
-      githubStars: 7407
+      pulls: 231
+      githubStars: 7421
       category: cost-management
       tags:
         - aws
@@ -2517,8 +2517,8 @@ registry:
           aws_access_key_id:
             type: string
     metadata:
-      pulls: 176
-      githubStars: 7407
+      pulls: 192
+      githubStars: 7421
       category: devops
       tags:
         - aws
@@ -2573,8 +2573,8 @@ registry:
           aws_access_key_id:
             type: string
     metadata:
-      pulls: 196
-      githubStars: 7407
+      pulls: 214
+      githubStars: 7421
       category: devops
       tags:
         - aws
@@ -2611,8 +2611,8 @@ registry:
           aws_profile:
             type: string
     metadata:
-      pulls: 212
-      githubStars: 7407
+      pulls: 228
+      githubStars: 7421
       category: security
       tags:
         - aws
@@ -2659,9 +2659,9 @@ registry:
           aws_profile:
             type: string
     metadata:
-      pulls: 343
+      pulls: 408
       stars: 1
-      githubStars: 7407
+      githubStars: 7421
       category: monitoring
       tags:
         - aws
@@ -2710,9 +2710,9 @@ registry:
           aws_profile:
             type: string
     metadata:
-      pulls: 279
+      pulls: 336
       stars: 1
-      githubStars: 7407
+      githubStars: 7421
       category: monitoring
       tags:
         - aws
@@ -2766,8 +2766,8 @@ registry:
           aws_access_key_id:
             type: string
     metadata:
-      pulls: 241
-      githubStars: 7407
+      pulls: 257
+      githubStars: 7421
       category: cost-management
       tags:
         - aws
@@ -2805,8 +2805,8 @@ registry:
           aws_profile:
             type: string
     metadata:
-      pulls: 176
-      githubStars: 7407
+      pulls: 192
+      githubStars: 7421
       category: database
       tags:
         - aws
@@ -2881,8 +2881,8 @@ registry:
           aws_profile:
             type: string
     metadata:
-      pulls: 143
-      githubStars: 7407
+      pulls: 156
+      githubStars: 7421
       category: database
       tags:
         - aws
@@ -2955,8 +2955,8 @@ registry:
           aws_access_key_id:
             type: string
     metadata:
-      pulls: 182
-      githubStars: 7407
+      pulls: 201
+      githubStars: 7421
       category: security
       tags:
         - aws
@@ -3016,8 +3016,8 @@ registry:
         required:
           - memcached_host
     metadata:
-      pulls: 132
-      githubStars: 7407
+      pulls: 143
+      githubStars: 7421
       category: database
       tags:
         - aws
@@ -3066,8 +3066,8 @@ registry:
           aws_access_key_id:
             type: string
     metadata:
-      pulls: 140
-      githubStars: 7407
+      pulls: 153
+      githubStars: 7421
       category: ai-ml
       tags:
         - aws
@@ -3109,8 +3109,8 @@ registry:
           aws_profile:
             type: string
     metadata:
-      pulls: 130
-      githubStars: 7407
+      pulls: 143
+      githubStars: 7421
       category: data-analytics
       tags:
         - aws
@@ -3173,8 +3173,8 @@ registry:
           aws_access_key_id:
             type: string
     metadata:
-      pulls: 147
-      githubStars: 7407
+      pulls: 160
+      githubStars: 7421
       category: data-analytics
       tags:
         - aws
@@ -3232,8 +3232,8 @@ registry:
           aws_profile:
             type: string
     metadata:
-      pulls: 124
-      githubStars: 7407
+      pulls: 136
+      githubStars: 7421
       category: database
       tags:
         - aws
@@ -3374,8 +3374,8 @@ registry:
           valkey_port:
             type: string
     metadata:
-      pulls: 117
-      githubStars: 7407
+      pulls: 148
+      githubStars: 7421
       category: database
       tags:
         - aws
@@ -3421,13 +3421,10 @@ registry:
       - name: azmcp-storage-blob-list
       - name: azmcp-storage-table-list
       - name: azmcp-subscription-list
-    command:
-      - server
-      - start
     prompts: 0
     resources: {}
     metadata:
-      githubStars: 1181
+      githubStars: 1184
       category: devops
       tags:
         - azure
@@ -3471,7 +3468,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 1282
+      pulls: 1300
       stars: 1
       category: devops
       tags:
@@ -3522,7 +3519,7 @@ registry:
         required:
           - api_id
     metadata:
-      pulls: 2554
+      pulls: 2571
       githubStars: 6
       category: devops
       tags:
@@ -3574,7 +3571,7 @@ registry:
         required:
           - client_id
     metadata:
-      pulls: 3142
+      pulls: 3159
       stars: 3
       category: devops
       tags:
@@ -3616,8 +3613,8 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 777
-      githubStars: 2800
+      pulls: 799
+      githubStars: 2805
       category: devops
       tags:
         - browserbase
@@ -3670,7 +3667,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 1775
+      pulls: 1795
       githubStars: 40
       category: devops
       tags:
@@ -3715,7 +3712,7 @@ registry:
           camundahost:
             type: string
     metadata:
-      pulls: 827
+      pulls: 852
       stars: 1
       githubStars: 6
       category: productivity
@@ -3767,7 +3764,7 @@ registry:
         required:
           - username
     metadata:
-      pulls: 1939
+      pulls: 1956
       stars: 3
       githubStars: 2
       category: devops
@@ -3838,7 +3835,7 @@ registry:
           charmhealth_token_url:
             type: string
     metadata:
-      pulls: 930
+      pulls: 947
       githubStars: 3
       category: productivity
       tags:
@@ -3881,9 +3878,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 6269
+      pulls: 6301
       stars: 5
-      githubStars: 423
+      githubStars: 425
       category: devops
       tags:
         - chroma
@@ -3934,7 +3931,7 @@ registry:
           url:
             type: string
     metadata:
-      pulls: 3742
+      pulls: 3755
       githubStars: 69
       category: devops
       tags:
@@ -3999,9 +3996,9 @@ registry:
           send_receive_timeout:
             type: string
     metadata:
-      pulls: 16646
+      pulls: 16762
       stars: 3
-      githubStars: 595
+      githubStars: 597
       category: database
       tags:
         - database
@@ -4076,8 +4073,8 @@ registry:
             type: string
             description: path to application-default credentials (eg $HOME/.config/gcloud/application_default_credentials.json )
     metadata:
-      pulls: 5835
-      githubStars: 465
+      pulls: 5913
+      githubStars: 466
       category: devops
       tags:
         - devops
@@ -4197,7 +4194,7 @@ registry:
           ssl_certfile:
             type: string
     metadata:
-      pulls: 1324
+      pulls: 1345
       githubStars: 6
       category: database
       tags:
@@ -4273,7 +4270,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 399
+      pulls: 413
       category: productivity
       tags:
         - productivity
@@ -4304,7 +4301,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 4509
+      pulls: 4535
       stars: 7
       githubStars: 32
       category: devops
@@ -4335,7 +4332,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 2837
+      pulls: 2858
       stars: 2
       githubStars: 34
       category: devops
@@ -4421,9 +4418,9 @@ registry:
           host:
             type: string
     metadata:
-      pulls: 3943
+      pulls: 3965
       stars: 2
-      githubStars: 120
+      githubStars: 121
       category: devops
       tags:
         - dart
@@ -4495,7 +4492,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 4710
+      pulls: 4737
       stars: 1
       githubStars: 27
       category: devops
@@ -4568,7 +4565,7 @@ registry:
         required:
           - project_id
     metadata:
-      pulls: 2395
+      pulls: 2410
       githubStars: 25
       category: devops
       tags:
@@ -4621,7 +4618,7 @@ registry:
         required:
           - url
     metadata:
-      pulls: 2583
+      pulls: 2597
       githubStars: 6
       category: devops
       tags:
@@ -4766,7 +4763,7 @@ registry:
           dreamfactoryapikey:
             type: string
     metadata:
-      pulls: 620
+      pulls: 635
       githubStars: 4
       category: database
       tags:
@@ -4793,9 +4790,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 152484
+      pulls: 153941
       stars: 6
-      githubStars: 644
+      githubStars: 645
       category: devops
       tags:
         - duckduckgo
@@ -4851,8 +4848,8 @@ registry:
           url:
             type: string
     metadata:
-      pulls: 22188
-      githubStars: 174
+      pulls: 25285
+      githubStars: 175
       category: monitoring
       tags:
         - Dynatrace
@@ -4881,9 +4878,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 4009
+      pulls: 4041
       stars: 2
-      githubStars: 347
+      githubStars: 349
       category: devops
       tags:
         - e2b
@@ -5084,7 +5081,7 @@ registry:
           - app
           - url
     metadata:
-      pulls: 2946
+      pulls: 2958
       stars: 1
       githubStars: 22
       category: devops
@@ -5111,7 +5108,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 1663
+      pulls: 1685
       githubStars: 206
       category: productivity
       tags:
@@ -5173,9 +5170,9 @@ registry:
         required:
           - data
     metadata:
-      pulls: 11304
+      pulls: 11387
       stars: 7
-      githubStars: 1063
+      githubStars: 1065
       category: ai
       tags:
         - elevenlabs
@@ -5203,9 +5200,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 3142
+      pulls: 3157
       stars: 3
-      githubStars: 72864
+      githubStars: 72952
       category: search
       tags:
         - everart
@@ -5233,9 +5230,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 6163
+      pulls: 6217
       stars: 5
-      githubStars: 3257
+      githubStars: 3261
       category: search
       tags:
         - exa
@@ -5275,7 +5272,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 491
+      pulls: 508
       githubStars: 17
       category: search
       tags:
@@ -5306,9 +5303,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 774095
+      pulls: 775183
       stars: 44
-      githubStars: 72864
+      githubStars: 72952
       category: devops
       tags:
         - fetch
@@ -5426,7 +5423,7 @@ registry:
           host:
             type: string
     metadata:
-      pulls: 2173
+      pulls: 2187
       githubStars: 27
       category: devops
       tags:
@@ -5477,9 +5474,9 @@ registry:
         required:
           - paths
     metadata:
-      pulls: 93789
+      pulls: 94373
       stars: 27
-      githubStars: 72864
+      githubStars: 72952
       category: devops
       tags:
         - filesystem
@@ -5574,9 +5571,9 @@ registry:
           url:
             type: string
     metadata:
-      pulls: 47442
+      pulls: 47625
       stars: 15
-      githubStars: 4936
+      githubStars: 4943
       category: search
       tags:
         - firecrawl
@@ -5666,7 +5663,7 @@ registry:
             type: string
             description: Your Firewalla Box Global ID
     metadata:
-      pulls: 1396
+      pulls: 1411
       githubStars: 8
       category: security
       tags:
@@ -5732,7 +5729,7 @@ registry:
           base_url:
             type: string
     metadata:
-      pulls: 2047
+      pulls: 2061
       stars: 1
       githubStars: 4
       category: devops
@@ -5760,7 +5757,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 521
+      pulls: 588
       category: ai
       tags:
         - ai
@@ -5807,9 +5804,9 @@ registry:
         required:
           - paths
     metadata:
-      pulls: 53443
+      pulls: 53943
       stars: 27
-      githubStars: 72864
+      githubStars: 72952
       category: devops
       tags:
         - gitl
@@ -5862,9 +5859,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 60548
+      pulls: 60742
       stars: 20
-      githubStars: 72864
+      githubStars: 72952
       category: devops
       tags:
         - github
@@ -5893,7 +5890,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 4568
+      pulls: 4587
       stars: 4
       githubStars: 69
       category: devops
@@ -5942,9 +5939,9 @@ registry:
             type: string
             description: api url - optional for self-hosted instances
     metadata:
-      pulls: 22358
+      pulls: 22509
       stars: 21
-      githubStars: 72864
+      githubStars: 72952
       category: devops
       tags:
         - gitlab
@@ -6025,7 +6022,7 @@ registry:
           ignored_saved:
             type: boolean
     metadata:
-      pulls: 3850
+      pulls: 3871
       stars: 2
       githubStars: 27
       category: devops
@@ -6087,6 +6084,33 @@ registry:
         - smtp
         - communication
       owner: Sallytion
+  google-flights:
+    description: Interact with Google Flights data to search for one-way, round-trip, and date range flight options between airports.
+    title: Google Flights
+    type: server
+    dateAdded: "2025-11-19T23:18:01Z"
+    image: mcp/google-flights@sha256:8ecfd55f5aff8f0fc322778d98708e0b031f00dc1c8b3244d877c4492b429543
+    ref: ""
+    readme: http://desktop.docker.com/mcp/catalog/v2/readme/google-flights.md
+    toolsUrl: http://desktop.docker.com/mcp/catalog/v2/tools/google-flights.json
+    source: https://github.com/kgprs/Google-Flights-MCP-Server/tree/a0d0a88ee8b1f2ef9ef42f89a399b9e2512ab11e
+    upstream: https://github.com/kgprs/Google-Flights-MCP-Server
+    icon: https://www.google.com/s2/favicons?domain=google.com/travel/flights&sz=64
+    tools:
+      - name: find_all_flights_in_range
+      - name: get_flights_on_date
+      - name: get_round_trip_flights
+    prompts: 0
+    resources: {}
+    metadata:
+      category: travel
+      tags:
+        - travel
+        - flights
+        - google-flights
+        - search
+      license: MIT License
+      owner: kgprs
   google-maps:
     description: Tools for interacting with the Google Maps API.
     title: Google Maps (Archived)
@@ -6114,9 +6138,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 58957
+      pulls: 59010
       stars: 15
-      githubStars: 72864
+      githubStars: 72952
       category: devops
       tags:
         - google-maps
@@ -6152,7 +6176,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 1754
+      pulls: 1791
       githubStars: 1
       category: devops
       tags:
@@ -6189,7 +6213,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 2635
+      pulls: 2651
       githubStars: 25
       category: devops
       tags:
@@ -6236,7 +6260,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 2070
+      pulls: 2084
       githubStars: 2
       category: devops
       tags:
@@ -6267,7 +6291,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 2979
+      pulls: 2995
       stars: 2
       githubStars: 13
       category: devops
@@ -6324,7 +6348,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 708
+      pulls: 723
       githubStars: 3
       category: search
       tags:
@@ -6464,7 +6488,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 3208
+      pulls: 3249
       stars: 1
       githubStars: 43
       category: devops
@@ -6675,7 +6699,7 @@ registry:
           client_id:
             type: string
     metadata:
-      pulls: 1788
+      pulls: 1800
       githubStars: 1
       category: devops
       tags:
@@ -6712,9 +6736,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 3787
+      pulls: 3813
       stars: 3
-      githubStars: 636
+      githubStars: 637
       category: devops
       tags:
         - hyperbrowser
@@ -6758,7 +6782,7 @@ registry:
           use_resources:
             type: boolean
     metadata:
-      pulls: 2416
+      pulls: 2431
       githubStars: 1
       category: devops
       tags:
@@ -6813,7 +6837,7 @@ registry:
         required:
           - app_name
     metadata:
-      pulls: 2201
+      pulls: 2214
       githubStars: 5
       category: devops
       tags:
@@ -6894,7 +6918,7 @@ registry:
         required:
           - kubeconfig
     metadata:
-      pulls: 1646
+      pulls: 1662
       stars: 2
       githubStars: 16
       category: monitoring
@@ -6989,7 +7013,7 @@ registry:
           port:
             type: integer
     metadata:
-      pulls: 8888
+      pulls: 8957
       stars: 2
       githubStars: 4
       category: devops
@@ -7120,9 +7144,9 @@ registry:
           engine:
             type: string
     metadata:
-      pulls: 2794
+      pulls: 2813
       stars: 1
-      githubStars: 219
+      githubStars: 221
       category: devops
       tags:
         - kagisearch
@@ -7192,7 +7216,7 @@ registry:
           kbc_workspace_schema:
             type: string
     metadata:
-      pulls: 2154
+      pulls: 2171
       githubStars: 80
       category: devops
       tags:
@@ -7241,7 +7265,7 @@ registry:
           region:
             type: string
     metadata:
-      pulls: 2642
+      pulls: 2660
       githubStars: 38
       category: devops
       tags:
@@ -7303,8 +7327,8 @@ registry:
         required:
           - kubeconfig
     metadata:
-      pulls: 1886
-      githubStars: 735
+      pulls: 1909
+      githubStars: 736
       category: devops
       tags:
         - kubectl-mcp-server
@@ -7363,9 +7387,9 @@ registry:
         required:
           - config_path
     metadata:
-      pulls: 33823
+      pulls: 34149
       stars: 16
-      githubStars: 1186
+      githubStars: 1187
       category: devops
       tags:
         - kubernetes
@@ -7414,7 +7438,7 @@ registry:
         required:
           - key_id
     metadata:
-      pulls: 2986
+      pulls: 3007
       stars: 3
       githubStars: 76
       category: devops
@@ -7465,7 +7489,7 @@ registry:
         required:
           - user_id
     metadata:
-      pulls: 6272
+      pulls: 6289
       githubStars: 495
       category: devops
       tags:
@@ -7511,7 +7535,7 @@ registry:
             type: string
             description: Custom user agent string (optional, helps avoid detection and cookie login issues)
     metadata:
-      githubStars: 575
+      githubStars: 577
       category: business
       tags:
         - linkedin
@@ -7604,7 +7628,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 478
+      pulls: 489
       stars: 1
       githubStars: 18
       category: monitoring
@@ -7674,7 +7698,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 1771
+      pulls: 1791
       stars: 1
       githubStars: 281
       category: maps
@@ -7725,7 +7749,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 1409
+      pulls: 1428
       stars: 1
       githubStars: 24
       category: devops
@@ -7776,7 +7800,7 @@ registry:
         required:
           - paths
     metadata:
-      pulls: 5330
+      pulls: 5427
       stars: 1
       githubStars: 2269
       category: productivity
@@ -7823,8 +7847,8 @@ registry:
         required:
           - paths
     metadata:
-      pulls: 9015
-      githubStars: 83083
+      pulls: 9139
+      githubStars: 83119
       category: productivity
       tags:
         - productivity
@@ -7915,7 +7939,7 @@ registry:
           api_1_header_authorization:
             type: string
     metadata:
-      pulls: 6686
+      pulls: 6757
       stars: 6
       githubStars: 29
       category: devops
@@ -7942,7 +7966,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 3872
+      pulls: 3916
       stars: 2
       githubStars: 10
       category: productivity
@@ -7991,9 +8015,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 9050
+      pulls: 9167
       stars: 15
-      githubStars: 12
+      githubStars: 13
       category: devops
       tags:
         - discord
@@ -8020,7 +8044,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 27430
+      pulls: 27471
       stars: 1
       category: news
       tags:
@@ -8052,7 +8076,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 2831
+      pulls: 2900
       stars: 1
       githubStars: 8
       category: development
@@ -8109,7 +8133,7 @@ registry:
           username:
             type: string
     metadata:
-      pulls: 2703
+      pulls: 2745
       stars: 1
       githubStars: 7
       category: communication
@@ -8144,9 +8168,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 118328
+      pulls: 118923
       stars: 26
-      githubStars: 72864
+      githubStars: 72952
       category: ai
       tags:
         - mcp
@@ -8280,7 +8304,7 @@ registry:
           metabaseusername:
             type: string
     metadata:
-      pulls: 1933
+      pulls: 1962
       stars: 2
       githubStars: 21
       category: data-visualization
@@ -8313,7 +8337,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 2724
+      pulls: 2769
       stars: 2
       githubStars: 6
       category: games
@@ -8369,7 +8393,7 @@ registry:
           - network
           - wallet
     metadata:
-      pulls: 2419
+      pulls: 2430
       category: devops
       tags:
         - multiversx-mx
@@ -8401,9 +8425,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 2454
+      pulls: 2477
       stars: 2
-      githubStars: 50
+      githubStars: 51
       category: finance
       tags:
         - nasdaq
@@ -8470,7 +8494,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 1521
+      pulls: 1534
       stars: 1
       githubStars: 82
       category: search
@@ -8551,9 +8575,9 @@ registry:
         required:
           - client_id
     metadata:
-      pulls: 2892
+      pulls: 2915
       stars: 2
-      githubStars: 802
+      githubStars: 803
       category: devops
       tags:
         - neo4j-cloud-aura-api
@@ -8648,9 +8672,9 @@ registry:
           - url
           - username
     metadata:
-      pulls: 12908
+      pulls: 13037
       stars: 2
-      githubStars: 802
+      githubStars: 803
       category: devops
       tags:
         - neo4j-cypher
@@ -8716,8 +8740,8 @@ registry:
           server_allowed_hosts:
             type: string
     metadata:
-      pulls: 1552
-      githubStars: 802
+      pulls: 1583
+      githubStars: 803
       category: devops
       tags:
         - neo4j-data-modeling
@@ -8798,9 +8822,9 @@ registry:
           - url
           - username
     metadata:
-      pulls: 7305
+      pulls: 7359
       stars: 9
-      githubStars: 802
+      githubStars: 803
       category: devops
       tags:
         - neo4j-memory
@@ -8828,7 +8852,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 954
+      pulls: 1009
       category: devtools
       tags:
         - devtools
@@ -8857,9 +8881,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 71497
+      pulls: 71603
       stars: 6
-      githubStars: 134
+      githubStars: 135
       category: devops
       tags:
         - node-code-sandbox
@@ -8904,7 +8928,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 1475
+      pulls: 1488
       githubStars: 12
       category: ai
       tags:
@@ -8947,7 +8971,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 11654
+      pulls: 11698
       stars: 1
       githubStars: 9
       category: devops
@@ -8992,9 +9016,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 33882
+      pulls: 34178
       stars: 17
-      githubStars: 2426
+      githubStars: 2436
       category: productivity
       tags:
         - obsidian
@@ -9065,7 +9089,7 @@ registry:
         required:
           - client_orgurl
     metadata:
-      pulls: 1128
+      pulls: 1142
       githubStars: 36
       category: ai
       tags:
@@ -9106,9 +9130,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 2319
+      pulls: 2333
       stars: 1
-      githubStars: 7225
+      githubStars: 7231
       category: ai
       tags:
         - ai
@@ -9167,7 +9191,7 @@ registry:
           base_url:
             type: string
     metadata:
-      pulls: 1516
+      pulls: 1532
       githubStars: 8
       category: productivity
       tags:
@@ -9207,7 +9231,7 @@ registry:
           mode:
             type: string
     metadata:
-      pulls: 1459
+      pulls: 1498
       githubStars: 13
       category: productivity
       tags:
@@ -9249,7 +9273,7 @@ registry:
           SchemaPath:
             type: string
     metadata:
-      pulls: 7135
+      pulls: 7155
       stars: 7
       githubStars: 45
       category: devops
@@ -9275,7 +9299,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 5660
+      pulls: 5710
       stars: 1
       githubStars: 334
       category: search
@@ -9334,7 +9358,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 5972
+      pulls: 6001
       stars: 4
       githubStars: 13
       category: search
@@ -9511,9 +9535,9 @@ registry:
           workspace_name:
             type: string
     metadata:
-      pulls: 2553
+      pulls: 2564
       stars: 1
-      githubStars: 185
+      githubStars: 186
       category: devops
       tags:
         - opik
@@ -9590,7 +9614,7 @@ registry:
           oracle_user:
             type: string
     metadata:
-      pulls: 1178
+      pulls: 1221
       githubStars: 2
       category: database
       tags:
@@ -9622,7 +9646,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 4013
+      pulls: 4032
       stars: 2
       githubStars: 253
       category: devops
@@ -9667,9 +9691,9 @@ registry:
         required:
           - username
     metadata:
-      pulls: 3018
+      pulls: 3032
       stars: 3
-      githubStars: 70
+      githubStars: 71
       category: devops
       tags:
         - oxylabs
@@ -9715,9 +9739,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 7834
+      pulls: 7884
       stars: 3
-      githubStars: 448
+      githubStars: 449
       category: search
       tags:
         - academic
@@ -9756,7 +9780,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 1132
+      pulls: 1148
       stars: 1
       githubStars: 3
       category: ai
@@ -9799,7 +9823,7 @@ registry:
             type: string
             description: The Pica API base URL
     metadata:
-      pulls: 95
+      pulls: 106
       githubStars: 8
       category: integration
       tags:
@@ -9840,7 +9864,7 @@ registry:
           assistant_host:
             type: string
     metadata:
-      pulls: 2384
+      pulls: 2403
       stars: 3
       githubStars: 39
       category: database
@@ -9906,8 +9930,8 @@ registry:
           data:
             type: string
     metadata:
-      pulls: 3666
-      githubStars: 4994
+      pulls: 3722
+      githubStars: 4998
       category: ai
       tags:
         - ai
@@ -9950,7 +9974,7 @@ registry:
             type: string
             description: Base URL for the Plugged.in API (optional, defaults to https://plugged.in for cloud or http://localhost:12005 for self-hosted)
     metadata:
-      pulls: 2446
+      pulls: 2462
       stars: 3
       githubStars: 107
       category: productivity
@@ -10030,7 +10054,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 481
+      pulls: 494
       githubStars: 1
       category: productivity
       tags:
@@ -10065,9 +10089,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 162124
+      pulls: 163118
       stars: 31
-      githubStars: 72864
+      githubStars: 72952
       category: database
       tags:
         - postgres
@@ -10133,9 +10157,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 5144
+      pulls: 5256
       stars: 2
-      githubStars: 100
+      githubStars: 102
       category: devops
       tags:
         - devops
@@ -10164,7 +10188,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 1486
+      pulls: 1501
       githubStars: 2
       category: devops
       tags:
@@ -10248,9 +10272,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 127268
+      pulls: 127788
       stars: 31
-      githubStars: 72864
+      githubStars: 72952
       category: devops
       tags:
         - puppeteer
@@ -10355,7 +10379,7 @@ registry:
           agentname:
             type: string
     metadata:
-      pulls: 705
+      pulls: 718
       stars: 1
       githubStars: 52
       category: finance
@@ -10384,7 +10408,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 1222
+      pulls: 1249
       githubStars: 75
       category: security
       tags:
@@ -10468,7 +10492,7 @@ registry:
         required:
           - key_id
     metadata:
-      pulls: 2635
+      pulls: 2652
       stars: 1
       githubStars: 207
       category: devops
@@ -10587,9 +10611,9 @@ registry:
           cluster_mode:
             type: boolean
     metadata:
-      pulls: 19782
+      pulls: 19904
       stars: 12
-      githubStars: 336
+      githubStars: 338
       category: database
       tags:
         - redis
@@ -10646,7 +10670,7 @@ registry:
         required:
           - api_key
     metadata:
-      pulls: 2886
+      pulls: 2905
       stars: 1
       githubStars: 37
       category: database
@@ -10677,9 +10701,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 2802
+      pulls: 2832
       stars: 2
-      githubStars: 767
+      githubStars: 769
       category: devops
       tags:
         - devops
@@ -10754,9 +10778,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 2763
+      pulls: 2789
       stars: 1
-      githubStars: 71
+      githubStars: 72
       category: devops
       tags:
         - render
@@ -10803,7 +10827,7 @@ registry:
           - reply_to
           - sender
     metadata:
-      pulls: 4089
+      pulls: 4105
       stars: 5
       githubStars: 412
       category: communication
@@ -10847,7 +10871,7 @@ registry:
           url:
             type: string
     metadata:
-      pulls: 2168
+      pulls: 2182
       githubStars: 6
       category: devops
       tags:
@@ -10886,7 +10910,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 1110
+      pulls: 1126
       stars: 5
       githubStars: 2
       category: security
@@ -10921,8 +10945,8 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 710
-      githubStars: 60
+      pulls: 731
+      githubStars: 59
       category: devops
       tags:
         - devops
@@ -11024,7 +11048,7 @@ registry:
             items:
               type: string
     metadata:
-      pulls: 1529
+      pulls: 1555
       githubStars: 99
       category: productivity
       tags:
@@ -11136,7 +11160,7 @@ registry:
           - required:
               - server_connection
     metadata:
-      pulls: 1040
+      pulls: 1055
       stars: 1
       githubStars: 7
       category: database
@@ -11164,7 +11188,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 1198
+      pulls: 1212
       category: productivity
       tags:
         - productivity
@@ -11194,7 +11218,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 3805
+      pulls: 3836
       stars: 4
       githubStars: 44
       category: devops
@@ -11224,7 +11248,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 2926
+      pulls: 2940
       stars: 3
       githubStars: 10
       category: devops
@@ -11254,7 +11278,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 1554
+      pulls: 1571
       stars: 2
       category: communication
       tags:
@@ -11317,9 +11341,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 4899
+      pulls: 4919
       stars: 6
-      githubStars: 72864
+      githubStars: 72952
       category: devops
       tags:
         - sentry
@@ -11357,7 +11381,7 @@ registry:
           mcp_server_url:
             type: string
     metadata:
-      pulls: 1144
+      pulls: 1162
       stars: 1
       githubStars: 16
       category: devops
@@ -11384,9 +11408,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 149266
+      pulls: 149915
       stars: 28
-      githubStars: 72864
+      githubStars: 72952
       category: ai
       tags:
         - mcp
@@ -11507,7 +11531,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 1373
+      pulls: 1387
       githubStars: 26
       category: database
       tags:
@@ -11559,9 +11583,9 @@ registry:
         required:
           - team_id
     metadata:
-      pulls: 277444
+      pulls: 277685
       stars: 22
-      githubStars: 72864
+      githubStars: 72952
       category: communication
       tags:
         - slack
@@ -11669,7 +11693,7 @@ registry:
           pact_broker_username:
             type: string
     metadata:
-      pulls: 1320
+      pulls: 1335
       githubStars: 17
       category: devops
       tags:
@@ -11740,7 +11764,7 @@ registry:
             type: string
             description: Organization key for SonarQube Cloud, not required for SonarQube Server or Community Build
     metadata:
-      pulls: 29039
+      pulls: 29847
       stars: 17
       githubStars: 172
       category: productivity
@@ -11775,9 +11799,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 17246
+      pulls: 17332
       stars: 16
-      githubStars: 72864
+      githubStars: 72952
       category: database
       tags:
         - sqlite
@@ -11825,7 +11849,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 539
+      pulls: 571
       githubStars: 4
       category: database
       tags:
@@ -11913,7 +11937,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 449
+      pulls: 462
       githubStars: 2
       category: devops
       tags:
@@ -11992,7 +12016,7 @@ registry:
           api_endpoint:
             type: string
     metadata:
-      pulls: 1268
+      pulls: 1282
       stars: 1
       githubStars: 3
       category: monitoring
@@ -12091,9 +12115,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 16311
+      pulls: 16358
       stars: 8
-      githubStars: 926
+      githubStars: 929
       category: search
       tags:
         - tavily
@@ -12225,7 +12249,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 1313
+      pulls: 1330
       githubStars: 11
       category: productivity
       tags:
@@ -12295,7 +12319,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 2078
+      pulls: 2092
       githubStars: 7
       category: devops
       tags:
@@ -12303,6 +12327,68 @@ registry:
         - devops
       license: MIT License
       owner: tembo-io
+  temporal:
+    description: MCP support for Temporal. A comprehensive set of tools for interacting with workflows and their adjacent configurations.
+    title: Temporal
+    type: server
+    dateAdded: "2025-11-19T23:01:35Z"
+    image: mcp/temporal@sha256:7b69ce26678bbabfefa939ccf42c89d4b001d62242eb550c71d52cd8105b9e7b
+    ref: ""
+    readme: http://desktop.docker.com/mcp/catalog/v2/readme/temporal.md
+    toolsUrl: http://desktop.docker.com/mcp/catalog/v2/tools/temporal.json
+    source: https://github.com/GethosTheWalrus/temporal-mcp/tree/45f4ec5cb9198e773b1380956425c3bd8ae71435
+    upstream: https://github.com/GethosTheWalrus/temporal-mcp
+    icon: https://media.licdn.com/dms/image/v2/D560BAQG2k4od1BnFYw/company-logo_200_200/company-logo_200_200/0/1719946312124/temporal_technologies_logo?e=2147483647&v=beta&t=MFaqPo93l6qp8Dj0NrAdWyIk3izLBhN1i0WCBf-yVFs
+    tools:
+      - name: batch_cancel
+      - name: batch_signal
+      - name: batch_terminate
+      - name: cancel_workflow
+      - name: continue_as_new
+      - name: create_schedule
+      - name: delete_schedule
+      - name: describe_workflow
+      - name: get_workflow_history
+      - name: get_workflow_result
+      - name: list_schedules
+      - name: list_workflows
+      - name: pause_schedule
+      - name: query_workflow
+      - name: signal_workflow
+      - name: start_workflow
+      - name: terminate_workflow
+      - name: trigger_schedule
+      - name: unpause_schedule
+    env:
+      - name: TEMPORAL_HOST
+        value: '{{temporal.temporal_host}}'
+      - name: TEMPORAL_NAMESPACE
+        value: '{{temporal.temporal_namespace}}'
+      - name: TEMPORAL_TLS_ENABLED
+        value: '{{temporal.temporal_tls_enabled}}'
+    prompts: 0
+    resources: {}
+    config:
+      - name: temporal
+        description: Configure your temporal server address. Temporal is usually listening on port 7233 by default. For new Temporal users, the namespace should be set to 'default' and TLS should be disabled. Do not use other values unless you know what you are doing.
+        type: object
+        properties:
+          temporal_host:
+            type: string
+          temporal_namespace:
+            type: string
+          temporal_tls_enabled:
+            type: string
+    metadata:
+      pulls: 5
+      githubStars: 1
+      category: devops
+      tags:
+        - temporal
+        - workflow
+        - devops
+      license: Apache License 2.0
+      owner: GethosTheWalrus
   terraform:
     description: The Terraform MCP Server provides seamless integration with Terraform ecosystem, enabling advanced automation and interaction capabilities for Infrastructure as Code (IaC) development.
     title: Hashicorp Terraform
@@ -12328,13 +12414,88 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      githubStars: 1060
+      githubStars: 1061
       category: devops
       tags:
         - hashicorp
         - terraform
       license: Mozilla Public License 2.0
       owner: hashicorp
+  testkube:
+    description: The Testkube MCP Server exposes continuous testing capabilities (test orchestration, execution, troubleshooting and anlysis) to AI tools and workflows.
+    title: Testkube
+    type: server
+    dateAdded: "2025-11-19T22:19:17Z"
+    image: mcp/testkube@sha256:42ab3880b1380af9de4a8468f32ba1e08c2774229e62e667022569c834ab5c42
+    ref: ""
+    readme: http://desktop.docker.com/mcp/catalog/v2/readme/testkube.md
+    toolsUrl: http://desktop.docker.com/mcp/catalog/v2/tools/testkube.json
+    source: https://github.com/kubeshop/testkube/tree/6da58c790ecffdec93de52f6bcd671317a7e2f5c
+    upstream: https://github.com/kubeshop/testkube
+    icon: https://avatars.githubusercontent.com/u/82541796?v=4
+    tools:
+      - name: abort_workflow_execution
+      - name: build_dashboard_url
+      - name: create_workflow
+      - name: fetch_execution_logs
+      - name: get_execution_info
+      - name: get_workflow
+      - name: get_workflow_definition
+      - name: get_workflow_execution_metrics
+      - name: get_workflow_metrics
+      - name: list_agents
+      - name: list_artifacts
+      - name: list_executions
+      - name: list_labels
+      - name: list_resource_groups
+      - name: list_workflows
+      - name: lookup_execution_id
+      - name: read_artifact
+      - name: run_workflow
+      - name: update_workflow
+      - name: wait_for_executions
+    secrets:
+      - name: testkube.api_key
+        env: TK_ACCESS_TOKEN
+        example: tkcapi_xxxxxxx
+      - name: testkube.org_id
+        env: TK_ORG_ID
+        example: tkcorg_xxxxxxx
+      - name: testkube.env_id
+        env: TK_ENV_ID
+        example: tkcenv_xxxxxxx
+    env:
+      - name: TK_CONTROL_PLANE_URL
+        value: '{{testkube.tk_control_plane_url}}'
+    prompts: 0
+    resources: {}
+    config:
+      - name: testkube
+        description: Configure the connection to the Testkube Control Plane
+        type: object
+        properties:
+          tk_control_plane_url:
+            type: string
+            description: The URL of the Testkube Control Plane
+    metadata:
+      pulls: 3
+      githubStars: 1531
+      category: devops
+      tags:
+        - devops
+        - testing
+        - automation
+        - orchestration
+        - kubernetes
+        - gitops
+        - playwright
+        - cypress
+        - selenium
+        - k6
+        - postman
+        - jmeter
+      license: Other
+      owner: kubeshop
   text-to-graphql:
     description: Transform natural language queries into GraphQL queries using an AI agent. Provides schema management, query validation, execution, and history tracking.
     title: Text-to-GraphQL
@@ -12383,7 +12544,7 @@ registry:
             type: number
             description: Model temperature for responses
     metadata:
-      pulls: 1405
+      pulls: 1419
       githubStars: 20
       category: devops
       tags:
@@ -12492,7 +12653,7 @@ registry:
         required:
           - url
     metadata:
-      pulls: 206
+      pulls: 220
       githubStars: 78
       category: monitoring
       tags:
@@ -12550,7 +12711,7 @@ registry:
           - aws_access_key_id
           - aws_endpoint_url_s3
     metadata:
-      pulls: 1135
+      pulls: 1150
       githubStars: 3
       category: devops
       tags:
@@ -12578,9 +12739,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 274555
+      pulls: 275257
       stars: 8
-      githubStars: 72864
+      githubStars: 72952
       category: devops
       tags:
         - time
@@ -12608,7 +12769,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 2191
+      pulls: 2205
       githubStars: 3
       category: devops
       tags:
@@ -12675,9 +12836,9 @@ registry:
           - ue_rc_http_port
           - ue_rc_ws_port
     metadata:
-      pulls: 1788
+      pulls: 1824
       stars: 2
-      githubStars: 22
+      githubStars: 23
       category: games
       tags:
         - games
@@ -12751,7 +12912,7 @@ registry:
           - VECTRA_BASE_URL
           - VECTRA_CLIENT_ID
     metadata:
-      pulls: 80
+      pulls: 91
       githubStars: 3
       category: ai
       tags:
@@ -12782,7 +12943,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 2461
+      pulls: 2477
       stars: 4
       githubStars: 47
       category: devops
@@ -12959,7 +13120,7 @@ registry:
           - vm_instance_entrypoint
           - vm_instance_type
     metadata:
-      githubStars: 88
+      githubStars: 89
       category: monitoring
       tags:
         - monitoring
@@ -13071,9 +13232,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 3728
+      pulls: 3754
       stars: 1
-      githubStars: 3474
+      githubStars: 3475
       category: data-visualization
       tags:
         - dashboard
@@ -13107,7 +13268,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 888
+      pulls: 905
       stars: 1
       githubStars: 7
       category: search
@@ -13191,8 +13352,8 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 2694
-      githubStars: 86
+      pulls: 2714
+      githubStars: 87
       category: devops
       tags:
         - webflow
@@ -13226,9 +13387,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 76517
+      pulls: 76728
       stars: 7
-      githubStars: 138
+      githubStars: 139
       category: devops
       tags:
         - wikipedia-mcp
@@ -13256,7 +13417,7 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 29551
+      pulls: 29581
       stars: 6
       githubStars: 64
       category: devops
@@ -13284,9 +13445,9 @@ registry:
     prompts: 0
     resources: {}
     metadata:
-      pulls: 115593
+      pulls: 116286
       stars: 16
-      githubStars: 121
+      githubStars: 122
       category: search
       tags:
         - youtube
@@ -13351,7 +13512,7 @@ registry:
         required:
           - kite_api_key
     metadata:
-      pulls: 489
+      pulls: 504
       category: finance
       tags:
         - finance
