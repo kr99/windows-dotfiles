@@ -1,0 +1,7 @@
+[http]
+	sslBackend = schannel
+[user]
+	name = Kimball Robinson
+	email = kimball.robinson@chghealthcare.com
+[core]
+	autocrlf = input

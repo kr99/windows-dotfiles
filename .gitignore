@@ -5,3 +5,10 @@ sdkman/candidates
 .bash_history
 .idea
 ./**
+
+# Secrets - never commit these regardless of force-add
+.npmrc
+.pgpass
+.ssh
+.gnupg
+AutoHotKey/GmailOutlookKeys.ahk

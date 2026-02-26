@@ -1,0 +1,87 @@
+#!/bin/bash
+# General disk cleanup script for developer workstation
+# Cleans: tmpclaude-* dirs, npm cache, Docker resources, stale node_modules, large .git folders
+
+set -e
+
+echo "=== Disk Cleanup ==="
+echo ""
+
+# Claude temporary working directories
+echo "→ Cleaning tmpclaude-* temporary directories..."
+CLAUDE_TEMP_COUNT=0
+CLAUDE_TEMP_SIZE=0
+while IFS= read -r tmpdir; do
+    size=$(du -sm "$tmpdir" 2>/dev/null | cut -f1)
+    CLAUDE_TEMP_SIZE=$((CLAUDE_TEMP_SIZE + size))
+    rm -rf "$tmpdir"
+    ((CLAUDE_TEMP_COUNT++))
+done < <(find /c/projects/claude -maxdepth 1 -type d -name "tmpclaude-*" 2>/dev/null)
+[ $CLAUDE_TEMP_COUNT -eq 0 ] && echo "  (none found)" || echo "  ✓ Removed $CLAUDE_TEMP_COUNT directories (~${CLAUDE_TEMP_SIZE}MB)"
+
+# npm cache
+echo ""
+echo "→ Cleaning npm cache..."
+npm cache clean --force 2>/dev/null && echo "  ✓ npm cache cleaned" || echo "  (already clean)"
+
+# Docker cleanup (using vetted commands from docker-cleanup.sh)
+echo ""
+echo "→ Cleaning Docker resources..."
+if command -v docker &> /dev/null; then
+    echo "  Before:"
+    docker system df
+    echo ""
+
+    echo "  Removing stopped containers..."
+    docker container prune -f
+
+    echo "  Removing unused images..."
+    docker image prune -a -f
+
+    echo "  Removing unused volumes..."
+    docker volume prune -f
+
+    echo "  Removing unused networks..."
+    docker network prune -f
+
+    echo "  Removing build cache..."
+    docker system prune -f
+
+    echo ""
+    echo "  After:"
+    docker system df
+else
+    echo "  (Docker not found, skipping)"
+fi
+
+# Stale node_modules (30+ days untouched)
+echo ""
+echo "→ Checking for stale node_modules (untouched 30+ days)..."
+DELETED=0
+while IFS= read -r nm; do
+    echo "  Deleting: $nm"
+    rm -rf "$nm"
+    ((DELETED++))
+done < <(find /c/projects -maxdepth 2 -type d -name "node_modules" -mtime +30 2>/dev/null)
+[ $DELETED -eq 0 ] && echo "  (none found)" || echo "  ✓ Removed $DELETED stale node_modules"
+
+# Large .git folders (optional: only run if found)
+echo ""
+echo "→ Optimizing large .git folders (>100MB)..."
+OPTIMIZED=0
+while IFS= read -r gitdir; do
+    size_before=$(du -sm "$gitdir" 2>/dev/null | cut -f1)
+    if [ "$size_before" -gt 100 ]; then
+        project=$(dirname "$gitdir")
+        echo "  Optimizing: $project (.git: ${size_before}MB)"
+        (cd "$project" && git gc --aggressive --prune=now 2>&1 | grep -v "^Counting" | grep -v "^Compressing" || true)
+        size_after=$(du -sm "$gitdir" 2>/dev/null | cut -f1)
+        saved=$((size_before - size_after))
+        echo "    ✓ Reduced to ${size_after}MB (saved ${saved}MB)"
+        ((OPTIMIZED++))
+    fi
+done < <(find /c/projects -maxdepth 2 -name ".git" -type d 2>/dev/null)
+[ $OPTIMIZED -eq 0 ] && echo "  (no large .git folders found)" || echo "  ✓ Optimized $OPTIMIZED repositories"
+
+echo ""
+echo "✓ Cleanup complete"
