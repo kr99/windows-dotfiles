@@ -12,6 +12,17 @@ case $- in
 esac
 
 # ============================================
+# PATH
+# ============================================
+export PATH=$HOME/bin:$PATH
+
+# ============================================
+# ENVIRONMENT
+# ============================================
+export LANG=en_US.UTF-8
+export TERM=xterm
+
+# ============================================
 # SHELL OPTIONS & BEHAVIOR
 # ============================================
 # Vi mode
@@ -23,6 +34,24 @@ export HISTFILESIZE=20000
 export HISTCONTROL=ignoredups:erasedups
 shopt -s histappend
 PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+# History expansion
+bind Space:magic-space                    # Preview expansion before executing
+shopt -s histverify                       # Confirm before executing expansion
+
+# Autocorrect directory typos
+shopt -s dirspell                         # Correct typos in directory names
+
+# Better globbing
+shopt -s globstar                         # ** matches recursively (e.g., **/*.js)
+shopt -s nocaseglob                       # Case-insensitive globbing
+shopt -s extglob                          # Extended pattern matching
+
+# Better job control
+shopt -s checkjobs                        # Warn about stopped jobs on exit
+
+# Programmable completion
+shopt -s progcomp                         # Enable programmable completion
 
 # Case-insensitive completion
 bind "set completion-ignore-case on"
@@ -44,7 +73,7 @@ export GIT_PS1_SHOWUPSTREAM=""
 # LAZY LOADED COMPLETIONS
 # ============================================
 # Git completion (lazy loaded)
-git() {
+function git {
     if [ -z "$GIT_COMPLETION_LOADED" ]; then
         for completion in \
             "/usr/share/git/completion/git-completion.bash" \
@@ -64,7 +93,7 @@ git() {
 # LAZY LOADED TOOLS
 # ============================================
 # NODIST
-node() {
+function node {
     if [ -z "$NODIST_LOADED" ]; then
         NODIST_BIN_DIR__=$(echo "$NODIST_PREFIX" | sed -e 's,\\,/,g')/bin
         if [ -f "$NODIST_BIN_DIR__/nodist.sh" ]; then 
@@ -76,14 +105,18 @@ node() {
     command node "$@"
 }
 
-npm() {
+function npm {
     node -v > /dev/null 2>&1  # Trigger node lazy load
+    if [ -z "$NPM_COMPLETION_LOADED" ]; then
+        eval "$(command npm completion 2>/dev/null)"
+        export NPM_COMPLETION_LOADED=1
+    fi
     command npm "$@"
 }
 
 # SDKMAN
 export SDKMAN_DIR="$HOME/.sdkman"
-sdk() {
+function sdk {
     if [ -z "$SDKMAN_LOADED" ]; then
         [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
         export SDKMAN_LOADED=1
@@ -118,45 +151,28 @@ alias egrep='egrep --color=auto'
 
 alias prune='git branch --merged main | grep -v "^[ *]*main$" | xargs git branch -d'
 
-# Load git completion immediately (it's fast!)
-for completion in \
-    "/usr/share/git/completion/git-completion.bash" \
-    "/mingw64/share/git/completion/git-completion.bash"
-do
-    if [ -f "$completion" ]; then
-        source "$completion"
-        break
-    fi
-done
-
 # ============================================
-# NPM COMPLETIONS & ALIASES
+# TAB COMPLETION BEHAVIOR
 # ============================================
-eval "$(npm completion)"
-
-
 # ZSH-like completion: list on first tab, cycle on subsequent tabs
-bind "set show-all-if-ambiguous on"
 bind "set menu-complete-display-prefix on"
-bind '"\t":menu-complete'                      # TAB cycles
-bind '"\e[Z":menu-complete-backward'           # Shift-TAB cycles backward
+bind '"\t":menu-complete'
+bind '"\e[Z":menu-complete-backward'
+
+# ============================================
+# FZF
+# ============================================
+export FZF_DEFAULT_COMMAND='history'
+echo "Ctrl-R to search history/etc"
 
 # ============================================
 # STARSHIP PROMPT
 # ============================================
-eval "$(starship init bash)"
+if command -v starship > /dev/null 2>&1; then
+    eval "$(starship init bash)"
+else
+    echo "Warning: starship not found in PATH"
+fi
 
-echo "BASHRC END: $(date +%T.%N)"export PATH=$HOME/bin:$PATH
+echo "BASHRC END: $(date +%T.%N)"
 
-# --- Starship & Git Bash Fixes ---
-export LANG=en_US.UTF-8
-export TERM=xterm
-
-# autocomplete with fuzzy finder fzf
-# Enable fzf history search with Ctrl+R
-export FZF_DEFAULT_COMMAND='history'
-echo "Ctrl-R to search history/etc"
-
-
-# Initialize Starship prompt
-eval "$(starship init bash)"

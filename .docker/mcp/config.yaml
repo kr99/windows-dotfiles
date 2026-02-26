@@ -11,3 +11,7 @@ filesystem:
 desktop-commander:
   paths:
     - C:/projects/sts
+n8n:
+  api_url: " http://host.docker.internal:5678"
+database-server:
+  database_url: postgresql+asyncpg://postgres:root@localhost:5432/postgres
